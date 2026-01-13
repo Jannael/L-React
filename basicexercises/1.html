@@ -8,11 +8,18 @@
 
     <script src="https://unpkg.com/supersimpledev/react.js"></script>
     <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
-
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
     <script type="text/babel">
+      const button = <button>Hello</button>
+      // const button = document.createElement('BUTTON')
+      // button.innerText = 'Hello'
+
+      // we use {to give an expression}
+
+      const p = <p>{1+1}</p>
       const container = document.querySelector('.js-container');
-      ReactDOM.createRoot(container).render('Welcome to SuperSimpleDev React Course');
+      ReactDOM.createRoot(container).render(p);
     </script>
   </body>
 </html>
